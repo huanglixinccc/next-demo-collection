@@ -1,0 +1,173 @@
+<h2>AI 新闻 Tab — 你更喜欢哪种布局风格？</h2>
+<p class="subtitle">考虑信息密度和阅读体验的平衡</p>
+
+<div class="cards">
+  <!-- Option A: 卡片瀑布流 -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup" style="margin:0;border:none;">
+        <div class="mockup-body" style="padding:12px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div style="border:1px solid #333;border-radius:8px;padding:10px;">
+              <div style="background:#444;height:8px;width:60%;border-radius:4px;margin-bottom:6px;"></div>
+              <div style="background:#555;height:5px;width:90%;border-radius:3px;margin-bottom:3px;"></div>
+              <div style="background:#555;height:5px;width:70%;border-radius:3px;margin-bottom:8px;"></div>
+              <div style="display:flex;gap:4px;">
+                <div style="background:#666;height:4px;width:30%;border-radius:2px;"></div>
+                <div style="background:#666;height:4px;width:25%;border-radius:2px;"></div>
+              </div>
+            </div>
+            <div style="border:1px solid #333;border-radius:8px;padding:10px;">
+              <div style="background:#444;height:8px;width:70%;border-radius:4px;margin-bottom:6px;"></div>
+              <div style="background:#555;height:5px;width:85%;border-radius:3px;margin-bottom:3px;"></div>
+              <div style="background:#555;height:5px;width:60%;border-radius:3px;margin-bottom:8px;"></div>
+              <div style="display:flex;gap:4px;">
+                <div style="background:#666;height:4px;width:35%;border-radius:2px;"></div>
+                <div style="background:#666;height:4px;width:20%;border-radius:2px;"></div>
+              </div>
+            </div>
+            <div style="border:1px solid #333;border-radius:8px;padding:10px;">
+              <div style="background:#444;height:8px;width:55%;border-radius:4px;margin-bottom:6px;"></div>
+              <div style="background:#555;height:5px;width:80%;border-radius:3px;margin-bottom:3px;"></div>
+              <div style="background:#555;height:5px;width:65%;border-radius:3px;margin-bottom:8px;"></div>
+              <div style="display:flex;gap:4px;">
+                <div style="background:#666;height:4px;width:28%;border-radius:2px;"></div>
+                <div style="background:#666;height:4px;width:22%;border-radius:2px;"></div>
+              </div>
+            </div>
+            <div style="border:1px solid #333;border-radius:8px;padding:10px;">
+              <div style="background:#444;height:8px;width:65%;border-radius:4px;margin-bottom:6px;"></div>
+              <div style="background:#555;height:5px;width:75%;border-radius:3px;margin-bottom:3px;"></div>
+              <div style="background:#555;height:5px;width:55%;border-radius:3px;margin-bottom:8px;"></div>
+              <div style="display:flex;gap:4px;">
+                <div style="background:#666;height:4px;width:32%;border-radius:2px;"></div>
+                <div style="background:#666;height:4px;width:18%;border-radius:2px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. 卡片网格</h3>
+      <p>多列卡片布局，每条新闻一张卡片，包含标题、摘要、来源标签和时间。信息密度高，一目了然。</p>
+    </div>
+  </div>
+
+  <!-- Option B: 列表流 -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup" style="margin:0;border:none;">
+        <div class="mockup-body" style="padding:12px;">
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div style="border:1px solid #333;border-radius:6px;padding:10px;display:flex;align-items:center;gap:10px;">
+              <div style="background:#444;width:50px;height:50px;border-radius:6px;flex-shrink:0;"></div>
+              <div style="flex:1;">
+                <div style="background:#444;height:7px;width:70%;border-radius:3px;margin-bottom:5px;"></div>
+                <div style="background:#555;height:5px;width:90%;border-radius:3px;margin-bottom:3px;"></div>
+                <div style="display:flex;gap:6px;">
+                  <div style="background:#666;height:4px;width:25%;border-radius:2px;"></div>
+                  <div style="background:#666;height:4px;width:20%;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="border:1px solid #333;border-radius:6px;padding:10px;display:flex;align-items:center;gap:10px;">
+              <div style="background:#444;width:50px;height:50px;border-radius:6px;flex-shrink:0;"></div>
+              <div style="flex:1;">
+                <div style="background:#444;height:7px;width:60%;border-radius:3px;margin-bottom:5px;"></div>
+                <div style="background:#555;height:5px;width:85%;border-radius:3px;margin-bottom:3px;"></div>
+                <div style="display:flex;gap:6px;">
+                  <div style="background:#666;height:4px;width:30%;border-radius:2px;"></div>
+                  <div style="background:#666;height:4px;width:18%;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="border:1px solid #333;border-radius:6px;padding:10px;display:flex;align-items:center;gap:10px;">
+              <div style="background:#444;width:50px;height:50px;border-radius:6px;flex-shrink:0;"></div>
+              <div style="flex:1;">
+                <div style="background:#444;height:7px;width:75%;border-radius:3px;margin-bottom:5px;"></div>
+                <div style="background:#555;height:5px;width:80%;border-radius:3px;margin-bottom:3px;"></div>
+                <div style="display:flex;gap:6px;">
+                  <div style="background:#666;height:4px;width:22%;border-radius:2px;"></div>
+                  <div style="background:#666;height:4px;width:15%;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="border:1px solid #333;border-radius:6px;padding:10px;display:flex;align-items:center;gap:10px;">
+              <div style="background:#444;width:50px;height:50px;border-radius:6px;flex-shrink:0;"></div>
+              <div style="flex:1;">
+                <div style="background:#444;height:7px;width:65%;border-radius:3px;margin-bottom:5px;"></div>
+                <div style="background:#555;height:5px;width:88%;border-radius:3px;margin-bottom:3px;"></div>
+                <div style="display:flex;gap:6px;">
+                  <div style="background:#666;height:4px;width:28%;border-radius:2px;"></div>
+                  <div style="background:#666;height:4px;width:20%;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. 紧凑列表</h3>
+      <p>左侧缩略图 + 右侧标题摘要的列表布局，类似资讯 App。适合快速浏览，纵向滚动阅读节奏好。</p>
+    </div>
+  </div>
+
+  <!-- Option C: 混合布局 -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup" style="margin:0;border:none;">
+        <div class="mockup-body" style="padding:12px;">
+          <!-- 头条大卡 -->
+          <div style="border:1px solid #333;border-radius:8px;padding:12px;margin-bottom:8px;">
+            <div style="background:#444;height:10px;width:50%;border-radius:4px;margin-bottom:6px;"></div>
+            <div style="background:#555;height:5px;width:95%;border-radius:3px;margin-bottom:3px;"></div>
+            <div style="background:#555;height:5px;width:80%;border-radius:3px;margin-bottom:6px;"></div>
+            <div style="display:flex;gap:4px;">
+              <div style="background:#666;height:4px;width:20%;border-radius:2px;"></div>
+              <div style="background:#666;height:4px;width:15%;border-radius:2px;"></div>
+            </div>
+          </div>
+          <!-- 下方小列表 -->
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <div style="border:1px solid #333;border-radius:5px;padding:8px;display:flex;align-items:center;gap:8px;">
+              <div style="background:#444;width:35px;height:35px;border-radius:5px;flex-shrink:0;"></div>
+              <div style="flex:1;">
+                <div style="background:#444;height:6px;width:65%;border-radius:3px;margin-bottom:4px;"></div>
+                <div style="display:flex;gap:4px;">
+                  <div style="background:#666;height:3px;width:25%;border-radius:2px;"></div>
+                  <div style="background:#666;height:3px;width:18%;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="border:1px solid #333;border-radius:5px;padding:8px;display:flex;align-items:center;gap:8px;">
+              <div style="background:#444;width:35px;height:35px;border-radius:5px;flex-shrink:0;"></div>
+              <div style="flex:1;">
+                <div style="background:#444;height:6px;width:55%;border-radius:3px;margin-bottom:4px;"></div>
+                <div style="display:flex;gap:4px;">
+                  <div style="background:#666;height:3px;width:28%;border-radius:2px;"></div>
+                  <div style="background:#666;height:3px;width:15%;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="border:1px solid #333;border-radius:5px;padding:8px;display:flex;align-items:center;gap:8px;">
+              <div style="background:#444;width:35px;height:35px;border-radius:5px;flex-shrink:0;"></div>
+              <div style="flex:1;">
+                <div style="background:#444;height:6px;width:70%;border-radius:3px;margin-bottom:4px;"></div>
+                <div style="display:flex;gap:4px;">
+                  <div style="background:#666;height:3px;width:22%;border-radius:2px;"></div>
+                  <div style="background:#666;height:3px;width:16%;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. 头条 + 列表混合（推荐）</h3>
+      <p>最新/最热的一条新闻以大卡片突出展示，其余用紧凑列表排列。层次分明，既有重点又不浪费空间。</p>
+    </div>
+  </div>
+</div>
