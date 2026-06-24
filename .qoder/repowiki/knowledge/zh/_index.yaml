@@ -1,0 +1,16 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: main
+nodes_managed: true
+exported_at: "2026-06-23T13:26:45Z"
+modules:
+    "":
+        dir_name: AI新闻布局方案原型
+        title: AI新闻布局方案原型
+        scope:
+            - .superpowers/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []

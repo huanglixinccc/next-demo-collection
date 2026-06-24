@@ -6,7 +6,11 @@ export const RSS_SOURCES: RssSource[] = [
     url: "https://techcrunch.com/category/artificial-intelligence/feed/",
   },
   {
-    name: "机器之心",
-    url: "https://www.jiqizhixin.com/rss",
+    name: "36氪",
+    url: "https://36kr.com/feed",
+  },
+  {
+    name: "IT之家",
+    url: "https://www.ithome.com/rss/",
   },
 ];
