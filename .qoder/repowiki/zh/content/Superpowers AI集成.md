@@ -3,7 +3,6 @@
 <cite>
 **本文档引用的文件**
 - [2026-06-23-ai-news-tab.md](file://docs/superpowers/plans/2026-06-23-ai-news-tab.md)
-- [2026-06-23-ai-news-tab-design.md](file://docs/superpowers/specs/2026-06-23-ai-news-tab-design.md)
 - [page.tsx](file://app/page.tsx)
 - [layout.tsx](file://app/layout.tsx)
 - [Header.tsx](file://components/Header.tsx)
@@ -17,6 +16,7 @@
 - [types.ts](file://lib/types.ts)
 - [response.ts](file://app/api/_shared/response.ts)
 - [middleware.ts](file://app/api/_shared/middleware.ts)
+- [route.ts](file://app/api/rss/route.ts)
 - [ecosystem.config.js](file://ecosystem.config.js)
 - [package.json](file://package.json)
 </cite>
@@ -94,10 +94,10 @@ end
 ```
 
 **图表来源**
-- [2026-06-23-ai-news-tab-design.md:36-68](file://docs/superpowers/specs/2026-06-23-ai-news-tab-design.md#L36-L68)
+- [2026-06-23-ai-news-tab.md:36-68](file://docs/superpowers/plans/2026-06-23-ai-news-tab.md#L36-L68)
 
 **章节来源**
-- [2026-06-23-ai-news-tab-design.md:36-68](file://docs/superpowers/specs/2026-06-23-ai-news-tab-design.md#L36-L68)
+- [2026-06-23-ai-news-tab.md:36-68](file://docs/superpowers/plans/2026-06-23-ai-news-tab.md#L36-L68)
 
 ## 核心组件
 
@@ -119,7 +119,7 @@ end
 - **去重和排序**：确保新闻数据的唯一性和时效性
 
 **章节来源**
-- [2026-06-23-ai-news-tab-design.md:110-151](file://docs/superpowers/specs/2026-06-23-ai-news-tab-design.md#L110-L151)
+- [2026-06-23-ai-news-tab.md:110-151](file://docs/superpowers/plans/2026-06-23-ai-news-tab.md#L110-L151)
 
 ## 架构概览
 
@@ -183,7 +183,6 @@ PM2 --> Nginx
 
 **图表来源**
 - [2026-06-23-ai-news-tab.md:1-800](file://docs/superpowers/plans/2026-06-23-ai-news-tab.md#L1-L800)
-- [2026-06-23-ai-news-tab-design.md:20-34](file://docs/superpowers/specs/2026-06-23-ai-news-tab-design.md#L20-L34)
 
 ### 数据流分析
 
@@ -451,7 +450,7 @@ PM2 --> Nginx
 ```
 
 **图表来源**
-- [2026-06-23-ai-news-tab-design.md:161-172](file://docs/superpowers/specs/2026-06-23-ai-news-tab-design.md#L161-L172)
+- [2026-06-23-ai-news-tab.md:161-172](file://docs/superpowers/plans/2026-06-23-ai-news-tab.md#L161-L172)
 
 ### 外部依赖
 
@@ -463,7 +462,7 @@ PM2 --> Nginx
 - **PM2**：提供进程管理和部署支持
 
 **章节来源**
-- [2026-06-23-ai-news-tab-design.md:9-18](file://docs/superpowers/specs/2026-06-23-ai-news-tab-design.md#L9-L18)
+- [2026-06-23-ai-news-tab.md:9-18](file://docs/superpowers/plans/2026-06-23-ai-news-tab.md#L9-L18)
 
 ## 性能考虑
 
