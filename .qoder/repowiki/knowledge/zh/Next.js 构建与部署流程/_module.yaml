@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: build_system
+title: Next.js 构建与部署流程
+scope: []
+source_files:
+    - package.json
+    - next.config.ts
+    - ecosystem.config.js
+    - tsconfig.json
+    - eslint.config.mjs
+    - postcss.config.mjs
+    - .nvmrc
+depends_on: []
+related_to: []

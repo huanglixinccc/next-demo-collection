@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: frontend_style
+title: Tailwind CSS 与 next-themes 驱动的暗色优先设计系统
+scope: []
+source_files:
+    - app/globals.css
+    - components/ThemeProvider.tsx
+    - components/Header.tsx
+    - components/ai-news/NewsFeed.tsx
+    - components/ai-news/NewsHeadline.tsx
+    - components/ai-news/NewsListItem.tsx
+    - postcss.config.mjs
+    - package.json
+depends_on: []
+related_to: []

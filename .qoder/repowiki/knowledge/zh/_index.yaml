@@ -3,14 +3,95 @@ schema_version: 1
 locale: zh-CN
 branch: main
 nodes_managed: true
-exported_at: "2026-06-23T13:26:45Z"
+exported_at: "2026-06-24T01:33:57Z"
 modules:
     "":
-        dir_name: AI新闻布局方案原型
-        title: AI新闻布局方案原型
+        dir_name: AI新闻布局原型设计
+        title: AI新闻布局原型设计
         scope:
             - .superpowers/
         source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    build_system:
+        dir_name: Next.js 构建与部署流程
+        title: Next.js 构建与部署流程
+        scope: []
+        source_files:
+            - package.json
+            - next.config.ts
+            - ecosystem.config.js
+            - tsconfig.json
+            - eslint.config.mjs
+            - postcss.config.mjs
+            - .nvmrc
+        children: []
+        depends_on: []
+        related_to: []
+    configuration_system:
+        dir_name: 配置系统
+        title: 配置系统
+        scope: []
+        source_files:
+            - next.config.ts
+            - lib/rss-config.ts
+            - ecosystem.config.js
+            - tsconfig.json
+            - postcss.config.mjs
+            - eslint.config.mjs
+            - package.json
+        children: []
+        depends_on: []
+        related_to: []
+    dependency_management:
+        dir_name: 依赖管理策略
+        title: 依赖管理策略
+        scope: []
+        source_files:
+            - package.json
+            - package-lock.json
+            - .nvmrc
+            - tsconfig.json
+        children: []
+        depends_on: []
+        related_to: []
+    error_handling:
+        dir_name: 统一响应与静默容错机制
+        title: 统一响应与静默容错机制
+        scope: []
+        source_files:
+            - app/api/_shared/response.ts
+            - app/api/_shared/middleware.ts
+            - app/api/rss/route.ts
+            - lib/rss.ts
+        children: []
+        depends_on: []
+        related_to: []
+    frontend_style:
+        dir_name: Tailwind CSS 与 next-themes 驱动的暗色优先设计系统
+        title: Tailwind CSS 与 next-themes 驱动的暗色优先设计系统
+        scope: []
+        source_files:
+            - app/globals.css
+            - components/ThemeProvider.tsx
+            - components/Header.tsx
+            - components/ai-news/NewsFeed.tsx
+            - components/ai-news/NewsHeadline.tsx
+            - components/ai-news/NewsListItem.tsx
+            - postcss.config.mjs
+            - package.json
+        children: []
+        depends_on: []
+        related_to: []
+    logging_system:
+        dir_name: 日志系统
+        title: 日志系统
+        scope: []
+        source_files:
+            - app/api/_shared/middleware.ts
+            - lib/rss.ts
+            - package.json
         children: []
         depends_on: []
         related_to: []
