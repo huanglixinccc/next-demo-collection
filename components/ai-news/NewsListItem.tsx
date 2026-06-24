@@ -1,9 +1,14 @@
+/**
+ * 新闻列表条目组件
+ * 紧凑布局，左侧来源图标 + 右侧标题、摘要截断、来源和时间
+ */
 import { NewsItem } from "@/lib/types";
 
 interface NewsListItemProps {
   item: NewsItem;
 }
 
+/** 将 ISO 时间格式化为简短相对时间（刚刚/Xh/Xd/日期） */
 function formatTime(isoDate: string): string {
   const date = new Date(isoDate);
   const now = new Date();
@@ -17,6 +22,7 @@ function formatTime(isoDate: string): string {
   return date.toLocaleDateString("zh-CN", { month: "short", day: "numeric" });
 }
 
+/** 列表条目，点击在新窗口打开原文 */
 export function NewsListItem({ item }: NewsListItemProps) {
   return (
     <a

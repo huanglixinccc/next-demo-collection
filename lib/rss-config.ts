@@ -1,3 +1,7 @@
+/**
+ * RSS 源配置
+ * 集中管理所有 RSS 订阅源，新增/删除源只需修改此文件
+ */
 import { RssSource } from "./types";
 
 export const RSS_SOURCES: RssSource[] = [

@@ -1,3 +1,8 @@
+/**
+ * 新闻聚合容器组件
+ * 将第一条新闻用头条卡片展示，其余用列表条目展示
+ * 无数据时显示空状态提示
+ */
 import { NewsItem } from "@/lib/types";
 import { NewsHeadline } from "./NewsHeadline";
 import { NewsListItem } from "./NewsListItem";
@@ -6,7 +11,9 @@ interface NewsFeedProps {
   news: NewsItem[];
 }
 
+/** @param news - 已排序的新闻列表（最新在前） */
 export function NewsFeed({ news }: NewsFeedProps) {
+  // 无数据时显示空状态
   if (news.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20 text-gray-500 dark:text-gray-400">
@@ -19,6 +26,7 @@ export function NewsFeed({ news }: NewsFeedProps) {
     );
   }
 
+  // 第一条为头条，其余为列表
   const [headline, ...rest] = news;
 
   return (

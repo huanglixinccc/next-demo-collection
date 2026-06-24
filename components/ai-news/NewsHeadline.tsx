@@ -1,9 +1,14 @@
+/**
+ * 新闻头条大卡片组件
+ * 突出展示最新一条新闻，包含封面图、标题、摘要、来源标签和时间
+ */
 import { NewsItem } from "@/lib/types";
 
 interface NewsHeadlineProps {
   item: NewsItem;
 }
 
+/** 将 ISO 时间格式化为相对时间（刚刚/X小时前/X天前/日期） */
 function formatTime(isoDate: string): string {
   const date = new Date(isoDate);
   const now = new Date();
@@ -17,6 +22,7 @@ function formatTime(isoDate: string): string {
   return date.toLocaleDateString("zh-CN");
 }
 
+/** 头条卡片，点击在新窗口打开原文 */
 export function NewsHeadline({ item }: NewsHeadlineProps) {
   return (
     <a

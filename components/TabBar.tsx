@@ -1,3 +1,7 @@
+/**
+ * Tab 标签切换栏组件
+ * 渲染 Tab 列表，高亮当前激活项，点击触发切换回调
+ */
 "use client";
 
 import { TabConfig } from "@/lib/types";
@@ -8,6 +12,9 @@ interface TabBarProps {
   onTabChange: (tabId: string) => void;
 }
 
+/** @param tabs - Tab 配置列表
+ *  @param activeTab - 当前激活的 Tab ID
+ *  @param onTabChange - Tab 切换回调 */
 export function TabBar({ tabs, activeTab, onTabChange }: TabBarProps) {
   return (
     <nav className="flex items-center gap-1">

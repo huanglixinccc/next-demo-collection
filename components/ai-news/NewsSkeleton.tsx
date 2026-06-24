@@ -1,3 +1,9 @@
+/**
+ * 新闻骨架屏组件
+ * 加载态占位 UI，结构与真实新闻卡片一致，使用 animate-pulse 动画
+ */
+
+/** 显示头条骨架 + 3 条列表骨架 */
 export function NewsSkeleton() {
   return (
     <div className="animate-pulse space-y-4">

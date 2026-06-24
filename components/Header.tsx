@@ -1,3 +1,7 @@
+/**
+ * 顶部导航栏组件
+ * 包含 Logo、Tab 切换栏和主题切换按钮，固定在页面顶部
+ */
 "use client";
 
 import { useState } from "react";
@@ -9,6 +13,7 @@ interface HeaderProps {
   tabs: TabConfig[];
 }
 
+/** 管理当前激活的 Tab 状态 */
 export function Header({ tabs }: HeaderProps) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
 

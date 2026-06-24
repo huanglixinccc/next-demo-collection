@@ -1,16 +1,23 @@
+/**
+ * 主题切换按钮组件
+ * 显示太阳/月亮图标，点击在暗色和亮色模式间切换
+ */
 "use client";
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
+/** 暗色显示太阳图标（切换到亮色），亮色显示月亮图标（切换到暗色） */
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+  // 客户端挂载标记，避免 SSR 水合不匹配
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  // 未挂载时渲染占位符，防止服务端/客户端不一致
   if (!mounted) {
     return <div className="w-9 h-9" />;
   }
